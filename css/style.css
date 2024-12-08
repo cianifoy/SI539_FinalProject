@@ -150,13 +150,12 @@ div.button{
   }
 }
 
-/* Next & previous buttons */
+Next & previous buttons
 .prev, .next {
-  cursor: pointer;
+  cursor: pointer; 
   /* position: sticky; */
   top: 50%;
   width: auto;
-  margin-top: 2050px;
   padding: 16px;
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -165,17 +164,19 @@ div.button{
   border-radius: 0 3px 3px 0;
   user-select: none;
   display: inline-block;
-}
+  z-index: 1;
+}  
 .slideshow-arrows {
     position: absolute;
-    top: 50%; /* Center vertically */
+    top: 50%; 
     left: 0;
     right: 0;
     display: flex;
     justify-content: center; /* Center horizontally */
-    gap: 300px; /* Space between buttons */
-    transform: translateY(-50%); /* Adjust for exact vertical centering */
-  }
+    align-items: center;
+    gap: 330px; /* Space between buttons */
+    transform: translateY(-180%); 
+}
 /* Caption text */
 .text {
     color: #000000;
@@ -223,7 +224,7 @@ div.review-text *{
 
         padding: 10px;
         margin: 0px 30px 0px 30px;
-        font-size: 16px;;
+        font-size: 18px;
     
 }
 .customer-reviews{
@@ -242,7 +243,7 @@ img.georgetown{
 
 }
 .reviews-container{
-    background-color: #fff3f9;
+    background-color: #fff9f9;
     padding-bottom: 20px;
     h3{
         text-align: center;
@@ -361,6 +362,10 @@ section.cupcake-container{
     border-top-right-radius: 12%;
     border-bottom-right-radius: 12%;
 
+}
+.review-linebreak{
+    padding:0px;
+    margin:0px;
 }
 
 
