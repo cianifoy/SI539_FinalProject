@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/BWfavicon.jpg"> 
+    <title>Baked & Wired</title>
+</head>
+<body>
+    <div class="skip"><a href = "#main">Skip to Main Content</a></div>
+    <header>
+        <img src="images/Hamburger Menu.png" alt="hamburger menu">
+        <h1>Baked & Wired</h1>
+        <img src="images/noun-basket-3267039.png" alt="shopping basket icon" class="basket">
+    </header>
+
+    <main class="container" id="main">
+       
+        <img src="images/Baked+and+Wired+DC.jpeg" alt="row of cupcakes on display" class="header-image">
+        
+        <section>
+            <h2>In the heart of Georgetown</h2>
+            <p> We're a family bakery located in the heart of Georgetown getting you baked since 2001. We produce small-batch baked goods prepared from family recipes and handcrafted coffee from roasters all across the country.</p>
+            <img src="images/Cute-buildings-in-Georgetown-Washington-DC.jpg.webp" alt="row of businesses in georgetown dc" class="georgetown">
+        </section>
+        <section>
+            <h2>When do you wanna get baked?</h2>
+            <p>If you are ordering more than 12 individual items (except cakecups), please place an advanced order with a minimum of 72 hours notice.</p>
+            <div class="button">
+                <p class="button-1">same day orders</p>
+                <p class="button-1">advanced orders</p>
+            </div>
+        </section>
+        <section>
+            <h2>Featured Products</h2>
+            <p>We offer a variety of goods from cakecups, drinks, packaged goods, and more!</p>
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                  <img src="images/pistachio-768x768.jpg" alt="pistachio honey cakecup">
+                  <div class="text">Pistachio Honey Cakecup</div>
+                  <p class="button-2">$5.95</p>
+                </div>
+              
+                <div class="mySlides">
+                  <img src="images/dirty-chai-768x768.jpg" alt="dirty chai cakecup">
+                  <div class="text">Dirty Chai Cakecup</div>
+                  <p class="button-2">$5.95</p>
+                </div>
+              
+                <div class="mySlides">
+                  <img src="images/Sarah-Culver-41-768x768.jpg" alt="soft oatmeal cookies filled with cream cheese frosting">
+                  <div class="text">Pistachio Honey Cakecup</div>
+                  <p class="button-2">$36.00</p>
+                </div>
+
+                <div class="mySlides">
+                    <img src="images/Sarah-Culver-27-768x768.jpg" alt="oatmeal crust with a thick layer of raspberry, blueberry or apricot jam + more oatmeal crunch on top">
+                    <div class="text">Fruit Crunch Bar</div>
+                    <p class="button-2">$27.00</p>
+                  </div>
+              
+                <!-- Next and previous buttons -->
+                 <div class="slideshow-arrows">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                 </div>
+              </div>
+              <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+        </section>
+
+        <section class="reviews">
+            <img src="images/Sarah-Culver-127-scaled.jpg">
+            <div class="reviews-container">
+                    <h2 class="customer-reviews">Customer Reviews</h2>
+                <div class="review-text">
+                    <p>"Consistently impressive local gem."</p>
+                    <p>- Ryan Martini</p>
+                </div>
+                <div class="review-text">
+                    <p>"The absolute best staff and best cupcakes in DC. So thankful to have this place nearby!"</p>
+                    <p>- Samantha Jarrett</p>
+                </div>
+                <div class="review-text">
+                    <p>The absolute best cupcake you're going to find in the world.  Prove me wrong.  I bet you can't.  And this is coming from someone who doesn't really enjoy cakes or cupcakes much.</p>
+                    <p>- Tim Lam</p>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot-1" onclick="currentSlide(1)"></span>
+                    <span class="dot-1" onclick="currentSlide(2)"></span>
+                    <span class="dot-1" onclick="currentSlide(3)"></span>
+            </div>
+            </div>
+            
+            
+        </section>
+        <!-- <section>
+            <h2>Just in Time for the Holidays</h2>
+            <p>Give a gift you know they'll love!</p>
+            <div class="holiday">
+                <img src="images/IMG_3390-768x768.jpg" alt="baked and wired mugs">
+                <p class="button-2">shop merch</p>
+            </div>
+            <div class="holiday">
+                <img src="images/gift-card2.png" alt="baked and wired gift card">
+                <p class="button-2">shop gift cards</p>
+
+            </div>
+            <hr>
+           
+        </section> -->
+        <section>
+            <img src="images/IMG_16881-e1545272868851.webp" alt="storefront of Baked and Wired" class="georgetown-storefront">
+            <h2>Come Visit Us</h2>
+            <p>1052 Thomas Jefferson St NW, Washington, DC 20007</p>
+            <div class="button">
+                <p class="button-1">order ahead</p>
+                <p class="button-1">get directions</p>
+            </div>
+           
+            
+           
+        </section>
+        
+        
+        <script>
+            let slideIndex2 = 1;
+            showSlides(slideIndex2);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex2 += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex2 = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("review-text");
+            let dots = document.getElementsByClassName("dot-1");
+            if (n > slides.length) {slideIndex2 = 1}
+            if (n < 1) {slideIndex2 = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex2-1].style.display = "block";
+            dots[slideIndex2-1].className += " active";
+            }
+        </script>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+
+        </script>
+        <footer>
+            <h1 class="footer-header">Baked & Wired</h1>
+            <div>
+                <p class="paragraph-regular">Store Hours</p>
+                <p class="paragraph-regular">Mon - Thurs: 8am - 4pm</p>
+                <p class="paragraph-regular">Fri - Sat: 8am - 8pm</p>
+                <p class="paragraph-regular">Sun: 8am - 4pm</p>
+            </div>
+            <p class="footer-second-line">© Copyrights <span id="year"></span> Baked & Wired. All Rights Reserved</p>
+            <div class="footer-last-line">
+                <a href="https://bakedandwired.com/privacy-policy/">Privacy Policy</a>
+                <p class="paragraph-regular">&</p>
+                <a href="https://bakedandwired.com/terms-and-conditions/">Terms of Use</a>
+            </div>
+            
+    
+        </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+        
+
+    </main>
+</body>
+    
+        
