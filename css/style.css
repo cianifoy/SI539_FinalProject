@@ -331,12 +331,15 @@ img.georgetown-storefront{
 }
 footer{
     font-family: "gosha-sans";
-    margin-top: 80px;
+    margin-top: 40px;
     background-color: #fff3f9;
     background-image: url("../images/bw_cakecups_variety-1024x1024.png");
     z-index: -1;
-    padding-top: 80px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    h1{
+        font-size: 22px;
+    }
 
 }
 .footer-second-line{
@@ -348,15 +351,7 @@ footer{
     
 
 }
-.paragraph-regular{
-    font-family: "gosha-sans";
-    padding: 0px;
-    margin-left:0px;;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    font-size: 18px;
-    
-}
+
 .footer-last-line{
     display:flex;
     gap: 10px;
@@ -383,7 +378,7 @@ ul {
     margin-left:5px;;
     margin-right: 5px;
     margin-bottom: 5px;
-    font-size: 22px;
+    font-size: 18px;
 }
 .footer-header{
     padding-bottom: 20px;
@@ -442,6 +437,17 @@ section.cupcake-container{
     padding: 20px;
     height: 2000px; /* Just to make the page long enough to scroll */
 }
+.about-coverart{
+    padding-bottom: 40px;
+}
+img.georgetown-2{
+    padding: 20px 30px 10px 30px;
+}
+.h2-about{
+    padding-top: 0px;
+    font-size: 22px;
+}
+
 
 
    
