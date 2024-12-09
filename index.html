@@ -11,8 +11,18 @@
 <body>
     <div class="skip"><a href = "#main">Skip to Main Content</a></div>
     <header>
-        <img src="images/Hamburger Menu.png" alt="hamburger menu">
-        <h1>Baked & Wired</h1>
+        <div class="hamburger-container" onclick="ShowHide(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+          
+        <div id="Menu">
+            <h2><a href="#1">advanced orders</a></h2>
+            <h2><a href="#2">same day orders</a></h2>
+            <h2><a href="#3">about</a></h2>
+        </div>
+        <h1><a href="index.html" class="header-logoname">Baked & Wired</a></h1>
         <img src="images/noun-basket-3267039.png" alt="shopping basket icon" class="basket">
     </header>
 
@@ -29,7 +39,7 @@
             <h2>When do you wanna get baked?</h2>
             <p>If you are ordering more than 12 individual items (except cakecups), please place an advanced order with a minimum of 72 hours notice.</p>
             <div class="button">
-                <p class="button-1">same day orders</p>
+                <a href="https://order.toasttab.com/online/baked-wired-1052-thomas-jefferson-street-nw" class="button-1">same day orders</a>
                 <a href="orders.html" class="button-1">advanced orders</a>
             </div>
         </section>
@@ -78,7 +88,7 @@
         </section>
 
         <section class="reviews">
-            <img src="images/Sarah-Culver-127-scaled.jpg">
+            <img src="images/Sarah-Culver-127-scaled.jpg" alt="employee picking up fruit bar from display case">
             <div class="reviews-container">
                     <h3 class="customer-reviews">Serving the Community for 23 Years</h3>
                 <div class="review-text">
@@ -130,8 +140,8 @@
             <h2>Come Visit Us</h2>
             <p>1052 Thomas Jefferson St NW, Washington, DC 20007</p>
             <div class="button">
-                <p class="button-1">order ahead</p>
-                <p class="button-1">get directions</p>
+                <a href="https://order.toasttab.com/online/baked-wired-1052-thomas-jefferson-street-nw" class="button-1">order ahead</a>
+                <a href="https://www.google.ca/maps/place/Baked+%26+Wired/@38.9039997,-77.0603429,17z/data=!3m1!4b1!4m6!3m5!1s0x89b7b64c77125887:0xe1d712a0d4705b54!8m2!3d38.9039997!4d-77.0603429!16s%2Fm%2F0j2857p?hl=en&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" class="button-1">get directions</a>
             </div>
            
             
@@ -169,6 +179,7 @@
             dots[slideIndex2-1].className += " active";
             }
         </script> -->
+        <script src= "js/cupcake.JS"></script>
         <script>
             let slideIndex = 1;
             showSlides(slideIndex);

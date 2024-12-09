@@ -2,18 +2,28 @@
         font-family: "gosha-sans";
         src:url(../fonts/GoshaSansRegular.otf);
 }
-
-
 h1{
     font-family: "gosha-sans";
     font-size: 25px;
     text-align: center;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures the document takes full height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Add padding to content to account for the header height */
+.content {
+    padding-top: 100px; /* Adjust this to match or slightly exceed the header's height */
+    height: 2000px; /* This is for demonstration purposes, so your page will scroll */
+}
 
 header {
     padding-left: 40px;
     padding-right: 40px;
-    background-color: #ffffff;
+    background-color: #fff3f9;
     position: fixed;
     top: 0;
     left: 0;
@@ -26,14 +36,75 @@ header {
     gap:20px;
     z-index: 1000; 
 }
-header * {
-    display: inline-block;
+a.header-logoname{
+    text-decoration: none;
+    color: #000000;
+   
 }
 .basket{
-    height: 55%; 
+    height: 50%; 
     max-width: 100%;
     
 }
+/* Header */
+.hamburger-container {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+}
+
+.bar1, .bar2, .bar3 {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    height: 5px;
+    background-color: #000000;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Menu Styling */
+#Menu {
+
+  width: 100%; /* Make the menu span the entire width of the screen */
+  height: 100vh; /* Make the menu take up the full height of the viewport */
+  background-color: rgba(56, 56, 56, 0.8); /* Translucent dark background */
+  display: none; /* Hidden by default */
+  position: absolute; /* Position relative to the page */
+  top: 84px; /* Adjust based on the height of your header */
+  left: 0; /* Align to the left of the page */
+  z-index: 999; /* Ensure the menu is above other content but below the header */
+  padding: 20px;
+    a{
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+    }
+}
+
+#Menu h2 {
+    margin: 10px;
+}
+
+#Menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 h2{
     font-family: "gosha-sans";
     font-size: 22px;
@@ -57,7 +128,7 @@ p{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 }
 .georgetown{
@@ -142,7 +213,7 @@ div.button{
 .slideshow-container {
   max-width: 400px;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   img{
     padding:0px 60px 10px 60px;
@@ -366,6 +437,10 @@ section.cupcake-container{
 .review-linebreak{
     padding:0px;
     margin:0px;
+}
+.content {
+    padding: 20px;
+    height: 2000px; /* Just to make the page long enough to scroll */
 }
 
 

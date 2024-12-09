@@ -11,8 +11,18 @@
 <body>
     <div class="skip"><a href = "#main">Skip to Main Content</a></div>
     <header>
-        <img src="images/Hamburger Menu.png" alt="hamburger menu">
-        <h1>Baked & Wired</h1>
+        <div class="hamburger-container" onclick="ShowHide(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+          
+        <div id="Menu">
+            <h2><a href="#1">advanced orders</a></h2>
+            <h2><a href="#2">same day orders</a></h2>
+            <h2><a href="#3">about</a></h2>
+        </div>
+        <h1><a href="index.html" class="header-logoname">Baked & Wired</a></h1>
         <img src="images/noun-basket-3267039.png" alt="shopping basket icon" class="basket">
     </header>
     
@@ -290,6 +300,7 @@
             </div>
         </section>
 
+        <script src= "js/cupcake.JS"></script>
         <footer>
             <h1 class="footer-header">Baked & Wired</h1>
             <div>
