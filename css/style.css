@@ -2,6 +2,7 @@
         font-family: "gosha-sans";
         src:url(../fonts/GoshaSansRegular.otf);
 }
+
 h1{
     font-family: "gosha-sans";
     font-size: 25px;
@@ -12,12 +13,28 @@ html, body {
     padding: 0;
     height: 100%; /* Ensures the document takes full height */
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin-top:25px;
 }
 
 /* Add padding to content to account for the header height */
 .content {
     padding-top: 100px; /* Adjust this to match or slightly exceed the header's height */
     height: 2000px; /* This is for demonstration purposes, so your page will scroll */
+}
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 2000;
+}
+a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
 }
 
 header {
@@ -104,6 +121,35 @@ a.header-logoname{
     text-decoration: none;
     color: #ffffff;
 }
+/* Navbar (for desktop) */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    color: white;
+}
+
 
 h2{
     font-family: "gosha-sans";
@@ -221,7 +267,7 @@ div.button{
   }
 }
 
-Next & previous buttons
+/* Next & previous buttons */
 .prev, .next {
   cursor: pointer; 
   /* position: sticky; */
@@ -392,7 +438,8 @@ ul {
 .cupcake-container{
     display: flex;
     border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%; 
+    border-bottom-left-radius: 10%;
+    background-color: #fff9f9;
     margin: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     min-height: 100%;
@@ -421,6 +468,7 @@ ul {
         border-bottom-left-radius: 10%;
         border-top-right-radius: 10%;
         border-bottom-right-radius: 10%;
+        max-width: 100%;
 
     } 
 }
@@ -443,9 +491,364 @@ section.cupcake-container{
 img.georgetown-2{
     padding: 20px 30px 10px 30px;
 }
+img.georgetown-3{
+    padding: 20px 30px 10px 30px;
+}
 .h2-about{
     padding-top: 0px;
     font-size: 22px;
+}
+
+@media screen and (min-width: 1200px){
+        /* @font-face {
+            font-family: "gosha-sans";
+            src:url(../fonts/GoshaSansRegular.otf);
+    } */
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%; /* Ensures the document takes full height */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    
+    h1{
+        font-family: "gosha-sans";
+        font-size: 36px;
+        text-align: center;
+    }
+    a.skip{
+        background: white;
+        left: 0;
+        padding: 6px;
+        position: absolute;
+        top: -40px;
+        -webkit-transition: top 1s ease-out;
+        transition: top 1s ease-out;
+        z-index: 2000;
+    }
+    a.skip:focus{
+        top:20px;
+        color: black;
+        text-decoration-style: solid;
+    }
+    header {
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: #fff3f9;
+        height: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:20px;
+        position: static;
+    }
+    a.header-logoname{
+        text-decoration: none;
+        color: #000000;
+        align-content:end;
+       
+    }
+    .basket{
+        height: 50%; 
+        max-width: 100%;
+        
+    }
+    h2{
+        font-family: "gosha-sans";
+        font-size: 30px;
+        padding-top: 40px;
+        margin: 0px 50px 0px 50px;
+        text-align: center;
+    }
+    h3{
+        font-family: "gosha-sans";
+        font-size: 26px;
+        
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom:10px;
+        /* margin: 0px 50px 0px 50px; */
+    
+    }
+    p{
+        padding: 20px 120px 20px 120px;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 20px;
+        font-size: 22px;
+        text-align: center;
+    }
+    .header-image{
+        width: 100%;                 /* Makes the container span the full width of the screen */
+        height: 800px;  
+        background-size: cover;      /* Ensures the image covers the entire container */
+        background-position: center; /* Centers the image within the container */
+        background-repeat: no-repeat; /* Prevents the image from repeating */ 
+        
+
+    }
+    img.georgetown{
+        padding: 10px 180px 10px 180px;
+        /* background-position: center; */
+        height: 850px;
+
+    }
+    div.text{
+        font-size: 20px;
+    }
+    .button-1{
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    
+        background-color: rgb(0, 0, 0);
+        border: solid 1px;
+        color: rgb(255, 255, 255);
+        padding: 15px 15px 15px 15px;
+        /* padding: 5px 60px; */
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 22px;
+        font-family: "gosha-sans";
+        margin: 5px 5px;
+        cursor: pointer;
+        
+    
+    }
+    .button-2{
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    
+        background-color: rgb(0, 0, 0);
+        border: solid 1px;
+        color: rgb(255, 255, 255);
+        padding: 15px 15px 15px 15px;
+        /* padding: 5px 60px; */
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 22px;
+        font-family: "gosha-sans";
+        margin: 20px 90px 20px 90px;
+        cursor: pointer;
+        
+    }
+    .button-3{
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    
+        background-color: rgb(0, 0, 0);
+        border: solid 1px;
+        color: rgb(255, 255, 255);
+        padding: 15px 15px 15px 15px;
+        /* padding: 5px 60px; */
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 22px;
+        font-family: "gosha-sans";
+        margin: 20px 90px 20px 90px;
+        cursor: pointer;
+        
+    }
+    div.button{
+        display:flex;
+        justify-content: center;
+        margin: 0px 40px 0px 40px;
+        gap: 10px;
+        padding-bottom: 30px;
+    
+    }
+    * {box-sizing:border-box}
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 680px;
+        margin: auto;
+        /* overflow: hidden; */
+        position: relative;
+        img{
+        padding:0px 60px 10px 60px;
+    
+        }
+    }
+    
+    Next & previous buttons
+    .prev, .next {
+        cursor: pointer; 
+        /* position: sticky; */
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        display: inline-block;
+        z-index: 1;
+    }  
+    .slideshow-arrows {
+        position: absolute;
+        top: 50%; 
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center;
+        gap: 660px; /* Space between buttons */
+        transform: translateY(-180%); 
+    }
+    .img{
+        max-width:50%;
+    }
+    section.reviews{
+        display:flex;
+        margin-right: 0px 40px 0px 40px;
+        padding: 90px 0px 90px 0px;
+        /* align-items: center;
+        justify-content: center; */
+        img{
+            max-width: 53%;
+        }
+
+    }
+    .reviews-container{
+        background-color: #fff9f9;
+        padding-bottom: 125px;
+        padding-top: 125px;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 70%;
+        h3{
+            text-align: center;
+            padding-top:20px;
+            padding-bottom:10px;
+        }
+        div{
+            padding: 10px;
+        }
+        h3{
+            font-size: 29px;
+            padding-bottom: 80px;
+        }
+    }
+    div.review-text *{
+
+        padding: 10px;
+        margin: 0px 30px 0px 30px;
+        font-size: 24px;
+    
+    }
+    img.georgetown-storefront{
+        background-size: cover; 
+        width: 100%;                 /* Makes the container span the full width of the screen */
+        height: 900px;
+        padding: 10px 180px 10px 180px;
+        
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 100px;
+
+        p.footer-second-line{
+            margin:0px;
+            padding:0px;
+        }
+        h1.footer-header{
+            font-size: 32px;
+            padding-right: 50px;
+        }
+        p.paragraph-regular{
+            font-size: 22px;
+            margin-right: 20px;
+        }
+        p.footer-second-line{
+            font-size: 16px;
+            .paragraph-regular{
+                font-size: 17px;
+            }
+        }
+        .footer-last-line{
+            font-size: 17px;
+        }
+    }
+    .header-image2 {
+        width: 100%;                 /* Make the container span the full width of the screen */
+        height: 750px;               /* Set the height for the image container */
+        background-size: cover;      /* Ensures the image covers the entire container while maintaining its aspect ratio */
+        background-position: center; /* Centers the image within the container */
+        background-repeat: no-repeat;/* Prevents the image from repeating */
+        position: relative;          /* Positions the image relative to its container */
+        top: -200px;                 /* Moves the image upwards by 100px */
+        z-index: -1;
+        top: 0;                      /* Remove or set to 0 if you want it flush with the container */
+        margin-bottom: 0;   
+    }
+    div.cupcake-box{
+        display: flex;
+        margin: 0px 15px 0px 15px;
+        .cupcake-rectangle-text{
+            max-width: 400px;
+        }
+    }
+    .cupcake-container{
+        img{
+            max-width: 160px;
+            max-height: 220px;
+        }
+    }
+    .about-coverart{
+        width: 100%;                 /* Make the container span the full width of the screen */
+        height: 750px; 
+        background-size: cover;      /* Ensures the image covers the entire container while maintaining its aspect ratio */
+        background-position: center; /* Centers the image within the container */
+        background-repeat: no-repeat;/* Prevents the image from repeating */
+        padding-bottom: 40px;
+    }
+    img.georgetown-2{
+        
+        padding: 40px 400px 10px 400px;
+    }
+    .about-container{
+        display: flex;
+        /* align-items: flex-end; */
+        
+
+        h1{
+            padding-bottom: 40px;
+        }
+        p{
+            margin-top: 20px;
+            padding: 20px;
+        }
+       
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
