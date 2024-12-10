@@ -582,7 +582,7 @@ img.georgetown-3{
     }
     .header-image{
         width: 100%;                 /* Makes the container span the full width of the screen */
-        height: 800px;  
+        height: 400px;  
         background-size: cover;      /* Ensures the image covers the entire container */
         background-position: center; /* Centers the image within the container */
         background-repeat: no-repeat; /* Prevents the image from repeating */ 
@@ -755,6 +755,9 @@ img.georgetown-3{
         padding: 10px 180px 10px 180px;
         
     }
+    p.cupcake-container-text{
+        font-size: 18px;
+    }
     footer{
         display: flex;
         flex-direction: row;
@@ -786,7 +789,7 @@ img.georgetown-3{
     }
     .header-image2 {
         width: 100%;                 /* Make the container span the full width of the screen */
-        height: 750px;               /* Set the height for the image container */
+        height: 520px;               /* Set the height for the image container */
         background-size: cover;      /* Ensures the image covers the entire container while maintaining its aspect ratio */
         background-position: center; /* Centers the image within the container */
         background-repeat: no-repeat;/* Prevents the image from repeating */
@@ -801,6 +804,12 @@ img.georgetown-3{
         margin: 0px 15px 0px 15px;
         .cupcake-rectangle-text{
             max-width: 400px;
+            p{
+                font-size: 18px;
+            }
+        }
+        h3{
+            font-size: 20px;
         }
     }
     .cupcake-container{
@@ -811,7 +820,7 @@ img.georgetown-3{
     }
     .about-coverart{
         width: 100%;                 /* Make the container span the full width of the screen */
-        height: 750px; 
+        height: 520px; 
         background-size: cover;      /* Ensures the image covers the entire container while maintaining its aspect ratio */
         background-position: center; /* Centers the image within the container */
         background-repeat: no-repeat;/* Prevents the image from repeating */
