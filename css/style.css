@@ -582,7 +582,7 @@ img.georgetown-3{
     }
     .header-image{
         width: 100%;                 /* Makes the container span the full width of the screen */
-        height: 400px;  
+        height: 520px;  
         background-size: cover;      /* Ensures the image covers the entire container */
         background-position: center; /* Centers the image within the container */
         background-repeat: no-repeat; /* Prevents the image from repeating */ 
@@ -592,7 +592,7 @@ img.georgetown-3{
     img.georgetown{
         padding: 10px 180px 10px 180px;
         /* background-position: center; */
-        height: 850px;
+        height: 520px;
 
     }
     div.text{
@@ -708,7 +708,7 @@ img.georgetown-3{
         transform: translateY(-180%); 
     }
     .img{
-        max-width:50%;
+        max-width:10%;
     }
     section.reviews{
         display:flex;
@@ -718,13 +718,14 @@ img.georgetown-3{
         justify-content: center; */
         img{
             max-width: 53%;
+            max-height: 500px;
         }
 
     }
     .reviews-container{
         background-color: #fff9f9;
-        padding-bottom: 125px;
-        padding-top: 125px;
+        /* padding-bottom: 125px;
+        padding-top: 125px; */
         padding-left: 20px;
         padding-right: 20px;
         max-width: 70%;
@@ -751,7 +752,7 @@ img.georgetown-3{
     img.georgetown-storefront{
         background-size: cover; 
         width: 100%;                 /* Makes the container span the full width of the screen */
-        height: 900px;
+        height: 600px;
         padding: 10px 180px 10px 180px;
         
     }
